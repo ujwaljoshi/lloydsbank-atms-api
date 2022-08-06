@@ -1,24 +1,40 @@
-LLOYDSBANK-ATMS-API
+**LLOYDSBANK-ATMS-API**
+
+**Technical Details**-
+
+This API is standard spring boot application.
 
 The purpose of this api is to expose a GET endpoint to retrieve full details of Lloyds Bank ATMs by the Branch Identification key
 
-This API contains one GET endpoint-
+GET endpoint-
 
 A GET endpoint to retrieve full ATM details by Branch identification key
 
 - GET /api/v1/branch/atms
 
-Technology stack-
+**Technology stack-**
 - java 11
 - Spring Boot
 - Junit
+- Mockito
+- JSON schema
 - Slf4j for logging
 - Actuator
 - Swagger- springdoc-openapi
 - Dockerfile
 - Jacoco plugin for unit test report
 
-Important links-
+**Development-**
+
+Build - Download the code from GitHub master branch and open in an IDE ensuring that dependent libraries are loaded. In intelliJ tick the use of auto-import checkbox in the settings.
+
+This API is a standard spring boot application. Confirm that the application builds and all the unit tests are pass by running the "./gradlew clean build" task. 
+
+Unit test reports: You can view the test reports under folder - build/reports/tests/test/index.html
+
+Run the application by using LloydsbankAtmsApiApplication class.
+
+**Important links-**
 
 Actuator health check endpoint - /actuator/health/custom
 
@@ -26,6 +42,7 @@ Swagger endpoint - /swagger-ui-lloydsbank-atms-api.html
 
 Docker image name- ujwaljoshi/lloydsbank-atms-api-1.0.0
 
+**Assumptions**
 
 Listing down the assumptions made while developing the spring boot application -
 1. I have used both endpoints from Lloyds Bank Open API https://api.lloydsbank.com/open-banking/v2.2/atms and https://api.lloydsbank.com/open-banking/v2.2/branches endpoint to retrieve atms and branches details.
