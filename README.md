@@ -36,11 +36,13 @@ Run the application by using LloydsbankAtmsApiApplication class.
 
 **Important links-**
 
-Actuator health check endpoint - /actuator/health/custom
+Actuator health check endpoint - /actuator/health/custom (http://localhost:8080/actuator/health/custom)
 
-Swagger endpoint - /swagger-ui-lloydsbank-atms-api.html
+Swagger endpoint - /swagger-ui-lloydsbank-atms-api.html (http://localhost:8080/swagger-ui-lloydsbank-atms-api.html)
 
-Docker image name- ujwaljoshi/lloydsbank-atms-api-1.0.0
+Docker image name- ujwaljoshi/lloydsbank-atms-api-1.0.0 
+(This image can be pull from docker hub - https://hub.docker.com/r/ujwaljoshi/lloydsbank-atms-api-1.0.0)
+
 
 **Assumptions**
 
