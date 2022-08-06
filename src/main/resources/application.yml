@@ -1,0 +1,16 @@
+lloyds_openapi_branches_url: https://api.lloydsbank.com/open-banking/v2.2/branches
+
+#swagger endpoint
+# swagger url - http://localhost:8080/swagger-ui-lloydsbank-atms-api.html
+springdoc:
+  swagger-ui:
+    path: /swagger-ui-lloydsbank-atms-api.html
+
+#Actuator health endpoint : /actuator/health/custom
+management:
+  endpoint:
+    health:
+      group:
+        custom:
+          show-components: always
+          show-details: always
