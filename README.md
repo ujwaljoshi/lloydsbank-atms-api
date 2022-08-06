@@ -40,9 +40,22 @@ Actuator health check endpoint - /actuator/health/custom (http://localhost:8080/
 
 Swagger endpoint - /swagger-ui-lloydsbank-atms-api.html (http://localhost:8080/swagger-ui-lloydsbank-atms-api.html)
 
+**Docker**
+
 Docker image name- ujwaljoshi/lloydsbank-atms-api-1.0.0 
 (This image can be pull from docker hub - https://hub.docker.com/r/ujwaljoshi/lloydsbank-atms-api-1.0.0)
 
+Instruction to run docker image:
+1. Pull the docker image from docker hub -  
+   docker pull ujwaljoshi/lloydsbank-atms-api-1.0.0
+2. Check downloaded image -
+   docker image ls or docker images 
+3. Run the docker image -
+   docker run -p 8080:8080 ujwaljoshi/lloydsbank-atms-api-1.0.0
+4. Check if the container is running -
+   docker ps
+5. Check the spring boot application logs by using-
+   docker logs <CONTAINER ID> -f
 
 **Assumptions**
 
